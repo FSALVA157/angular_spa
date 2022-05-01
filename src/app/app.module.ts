@@ -7,6 +7,8 @@ import { HomeComponent } from './componentes/home/home.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { HeroesComponent } from './componentes/heroes/heroes.component';
 import { APP_ROUTING } from './app.routes';
+import { HeroesService } from './services/heroes.services';
+import { HeroeComponent } from './componentes/heroe/heroe.component';
 
 
 @NgModule({
@@ -16,12 +18,15 @@ import { APP_ROUTING } from './app.routes';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
+    HeroeComponent,
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

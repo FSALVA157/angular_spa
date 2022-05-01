@@ -1,0 +1,17 @@
+<h1>{{ heroe.nombre }}<small>{{heroe.aparicion}}</small></h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <img [src]=heroe.img [alt]=heroe.nombre class="img-fluid">
+        <br>
+        <br>
+        <div class="d-grid gap-2">
+            <a [routerLink]="['/heroes']" routerLinkActive="router-link-active"  class="btn btn-outline-danger btn-block">Regresar</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h3>{{heroe.nombre}}</h3>
+        <hr>
+        <p>{{heroe.bio}}</p>
+    </div>    
+</div>
